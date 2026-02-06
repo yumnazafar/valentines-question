@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #000000;
+    z-index: 4;
+    font-family: "Poppins", serif;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    z-index: 1;
+    
+}
+
+section {
+    z-index: 1;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #BFE3FF;
+    overflow: hidden;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+}
+
+.video-background video {
+    display: none;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+}
+
+.container {
+    height: 70%;
+    border: 2px solid black;
+    width: 33%;
+}
+
+.image-box {
+    height: 70%;
+    width: 100%;
+}
+
+.actual-image {
+    height: 80%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.media {
+    height: 90%;
+    width: 64%;
+    border: 2px solid #000000;
+    box-sizing: border-box;
+    display: block;
+    object-fit: cover;
+}
+
+.text-one {
+    height: 20%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0.5px solid rgba(0, 0, 0, 0.164);
+}
+
+.yes-no {
+    height: 30%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.yes {
+    font-family: "Thud Regular", "Poppins", serif;
+    font-size: 7vh;
+    font-weight: 550;
+    height: 60%;
+    width: 40%;
+    border: none;
+    cursor: pointer;
+    background-color: #3451ad;
+    scale: 1;
+    z-index: 500;
+    transition: scale 0.1s ease-in;
+}
+
+.no {
+    font-family: "Thud Regular", "Poppins", serif;
+    font-size: 7vh;
+    font-weight: 550;
+    height: 60%;
+    width: 40%;
+    border: none;
+    cursor: pointer;
+    background-color: #3451ad;
+    scale: 1;
+    transition: scale 0.1s ease-in;
+}
+
+.yes:hover, .no:hover {
+    opacity: 0.95;
+    scale: 0.95;
+}
+
+a {
+    text-decoration: none;
+    font-family: "Thud Regular", "Poppins", serif;
+    font-size: 7vh;
+}
+
+@media (min-width:200px) and (max-width:1025px) {
+    .container {
+        height: 80%;
+        width: 98%;
+    }
+    .media {
+        height: 90%;
+        width: 80%;
+    }
+}
